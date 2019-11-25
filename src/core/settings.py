@@ -25,7 +25,7 @@ SECRET_KEY = 'osx!*ihr0uk83!^$hh!bdo(m^w1vkc2y0o%3*nmo%6j*9b5l!3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "schedulebntu.herokuapp.com"]
 
 
 # Application definition
