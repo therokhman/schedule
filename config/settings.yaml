@@ -1,5 +1,5 @@
 default:
-  SECRET_KEY: ""
+  SECRET_KEY: "osx!*ihr0uk83!^$hh!bdo(m^w1vkc2y0o%3*nmo%6j*9b5l!3"
   DEBUG: true
   ALLOWED_HOSTS: []
 
@@ -9,9 +9,3 @@ heroku:
     - 127.0.0.1
     - localhost
     - schedulebntu.herokuapp.com
-
-development:
-  DEBUG: true
-    ALLOWED_HOSTS:
-      - 127.0.0.1
-      - localhost
