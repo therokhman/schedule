@@ -1,5 +1,5 @@
 default:
-  SECRET_KEY: "osx!*ihr0uk83!^$hh!bdo(m^w1vkc2y0o%3*nmo%6j*9b5l!3"
+  SECRET_KEY: ""
   DEBUG: true
   ALLOWED_HOSTS: []
 
