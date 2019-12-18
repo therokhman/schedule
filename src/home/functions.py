@@ -14,4 +14,5 @@ def getData():
     for row in data:
         print(row[0], " ", row[1])
     conn.commit()
+
     conn.close()
