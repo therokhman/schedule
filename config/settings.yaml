@@ -6,7 +6,4 @@ default:
 
 heroku:
   DEBUG: false
-  ALLOWED_HOSTS:
-    - 127.0.0.1
-    - localhost
-    - schedulebntu.herokuapp.com
+  ALLOWED_HOSTS: ['127.0.0.1', 'localhost', 'schedulebntu.herokuapp.com']
