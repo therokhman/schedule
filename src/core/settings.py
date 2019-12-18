@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
-import dj_database_url
+
 from dynaconf import settings as _settings
 
 
@@ -82,26 +82,21 @@ if _settings.ENV_FOR_DYNACONF == "heroku":
 
 DATABASES = {
     # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
-    # "default": dj_database_url.parse(db_url, conn_max_age=600),
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    },
-    # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'd4m79fqvn4uccl',
-    #     'USER': 'ilwtvyeswnvrxf',
-    #     'PASSWORD': 'c189da7af2cac8e3977eabc903d8e860adb109f99df320972d1ac17e95543957',
-    #     'HOST': 'ec2-46-137-113-157.eu-west-1.compute.amazonaws.com',
+    #     'NAME': 'postgres',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'admin',
+    #     'HOST': '127.0.0.1',
     #     'PORT': '5432',
     # },
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd4m79fqvn4uccl',
+        'USER': 'ilwtvyeswnvrxf',
+        'PASSWORD': 'c189da7af2cac8e3977eabc903d8e860adb109f99df320972d1ac17e95543957',
+        'HOST': 'ec2-46-137-113-157.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
+    },
 }
 
 
