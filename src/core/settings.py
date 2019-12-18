@@ -86,15 +86,15 @@ DATABASES = {
     #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     # }
     # "default": dj_database_url.parse(db_url, conn_max_age=600),
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'postgres',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'admin',
+    #     'HOST': '127.0.0.1',
+    #     'PORT': '5432',
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    },
-    'heroku': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd4m79fqvn4uccl',
         'USER': 'ilwtvyeswnvrxf',
