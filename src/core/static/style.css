@@ -1,0 +1,33 @@
+body {
+    background-color: #002207;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 48px;
+}
+a {
+    color: lime;
+}
+a:visited {
+    color: silver;
+}
+a:hover {
+    color: red;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #015200;
+}
+.logo {
+    font-size: 36px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: lime;
+}
+table {
+    background-color: #ffffff;
+}
