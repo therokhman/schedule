@@ -88,9 +88,9 @@ DATABASES = {
     # "default": dj_database_url.parse(db_url, conn_max_age=600),
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
+        'NAME': 'd4m79fqvn4uccl',
+        'USER': 'ilwtvyeswnvrxf',
+        'PASSWORD': 'c189da7af2cac8e3977eabc903d8e860adb109f99df320972d1ac17e95543957',
         'HOST': 'ec2-46-137-113-157.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
