@@ -2,7 +2,7 @@ default:
   SECRET_KEY: ""
   DEBUG: true
   ALLOWED_HOSTS: []
-  DATABASE_URL: "postgresql://admin:admin@localhost:5432/schedule"
+  DATABASE_URL: "postgresql://admin:admin@localhost:5432/schedulebntu"
 
 heroku:
   DEBUG: false
