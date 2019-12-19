@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<form class="mt-5" action="">
+<form class="mt-5" action="/result" method="get">
     <div class="form-group">
-        <label class="row" for="exampleFormControlSelect1">Example select</label>
+        <label class="row" for="exampleFormControlSelect1">Выберите группу</label>
         <div class="row">
-            <select class="form-control col-lg-10" id="exampleFormControlSelect1">
-              <option>10702417</option>
+            <select name="group" class="form-control col-lg-10" id="exampleFormControlSelect1">
+              <option value="10702417">10702417</option>
+              <option value="10702317">10702317</option>
             </select>
             <div class="col-lg-2">
-                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="submit" class="btn btn-primary">Choose</button>
             </div>
         </div>
 

@@ -1,17 +1,21 @@
 from django.shortcuts import render
 import psycopg2
+from django.http import HttpRequest
+
 
 def getData(day):
-    # conn = psycopg2.connect(database="schedule_10702417",
-    #                         user="postgres",
-    #                         host="127.0.0.1",
-    #                         password="admin",
-    #                         port="5432")
-    conn = psycopg2.connect(database="schedule_10702417",
-                            user="ilwtvyeswnvrxf",
-                            host="ec2-46-137-113-157.eu-west-1.compute.amazonaws.com",
-                            password="c189da7af2cac8e3977eabc903d8e860adb109f99df320972d1ac17e95543957",
+    # group = HttpRequest.GET['group']
+    # print(group)
+    conn = psycopg2.connect(database="schedule_"+group,
+                            user="postgres",
+                            host="127.0.0.1",
+                            password="admin",
                             port="5432")
+    # conn = psycopg2.connect(database="schedule_10702417",
+    #                         user="ilwtvyeswnvrxf",
+    #                         host="ec2-46-137-113-157.eu-west-1.compute.amazonaws.com",
+    #                         password="c189da7af2cac8e3977eabc903d8e860adb109f99df320972d1ac17e95543957",
+    #                         port="5432")
 
     cur = conn.cursor()
     result = {}
@@ -42,4 +46,7 @@ def index(request):
 
 
 def result(request):
+    global group
+    group = request.GET['group']
+    print(group)
     return render(request, "result.html", {"days": get_days().items()})
